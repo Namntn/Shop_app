@@ -1,0 +1,71 @@
+/* CSS cho Banner */
+.banner {
+    background-color: #003366; /* Màu nền xanh đậm */
+    color: white; /* Màu chữ trắng */
+    text-align: center; /* Căn giữa văn bản */
+    padding: 20px 0; /* Khoảng cách trên và dưới */
+    position: relative; /* Để định vị mũi tên */
+  }
+  
+  .banner h1 {
+    font-size: 36px; /* Kích thước chữ lớn */
+    margin: 0; /* Bỏ khoảng cách mặc định */
+  }
+  
+  .banner p {
+    font-size: 20px; /* Kích thước chữ nhỏ hơn */
+    margin: 10px 0 0; /* Khoảng cách trên */
+  }
+  
+  .banner img {
+    width: 100%; /* Chiều rộng tối đa */
+    height: auto; /* Tự động điều chỉnh chiều cao */
+  }
+  
+  .arrow {
+    position: absolute; /* Định vị mũi tên */
+    top: 50%; /* Căn giữa theo chiều dọc */
+    transform: translateY(-50%); /* Điều chỉnh để căn giữa */
+    background-color: rgba(0, 0, 0, 0.5); /* Nền bán trong suốt */
+    border: none; /* Bỏ đường viền */
+    color: white; /* Màu chữ trắng */
+    font-size: 24px; /* Kích thước chữ lớn */
+    cursor: pointer; /* Con trỏ chuột */
+    padding: 10px; /* Khoảng cách bên trong */
+  }
+  
+  .arrow.left {
+    left: 10px; /* Đặt bên trái */
+  }
+  
+  .arrow.right {
+    right: 10px; /* Đặt bên phải */
+  }
+  
+  /* CSS cho Phần Sản Phẩm */
+  .products {
+    padding: 20px; /* Khoảng cách bên trong */
+  }
+  
+  .products h2 {
+    font-size: 28px; /* Kích thước chữ tiêu đề */
+    color: #003366; /* Màu chữ xanh đậm */
+    text-align: center; /* Căn giữa */
+    margin-bottom: 20px; /* Khoảng cách dưới */
+  }
+  
+  .product-list {
+    display: flex; /* Hiển thị theo chiều ngang */
+    justify-content: space-around; /* Phân bố đều các phần tử */
+  }
+  
+  .product-item {
+    flex: 1; /* Chiếm đều không gian */
+    text-align: center; /* Căn giữa nội dung */
+  }
+  
+  .product-item img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước khối */
+    height: auto; /* Tự động điều chỉnh chiều cao */
+  }
+  
