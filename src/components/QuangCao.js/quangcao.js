@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './quangcao.css'; // Tệp CSS của chúng ta
 
 const Quangcao = () => {
@@ -22,9 +22,17 @@ const Quangcao = () => {
   const handleNextClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
- 
-  
 
+  // Tự động chuyển ảnh sau mỗi 3 giây
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNextClick();
+    }, 3000); // 3000ms = 3 giây
+
+    return () => clearInterval(interval); // Dọn dẹp interval khi component unmount
+  }, [currentIndex]);
+
+  
   return (
     <div>
       {/* Banner Quảng Cáo */}
